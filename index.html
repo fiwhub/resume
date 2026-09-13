@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resume และ Web Portfolio ของ ธนวัตร เลิศสิริการุณย์ (ฟิว)">
+    <meta name="author" content="Tanawat Lertsirikarun">
+
+    <title>Tanawat Lertsirikarun | Portfolio & Resume</title>
+
+    <!-- Google Fonts: Prompt -->
+    <link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)">
+    <link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+    <link href="[https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap](https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap)" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css)" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar-header">
+        <div class="container nav-container">
+            <a href="#hero" class="nav-logo">TANAWAT<span>.</span></a>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="#hero" class="nav-item active">Home</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#hobbies" class="nav-item">Hobbies</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </nav>
+
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sunburst Decorative Element -->
+        <div class="sunburst-decoration" aria-hidden="true"></div>
+
+        <!-- HERO SECTION -->
+        <section id="hero" class="section hero-section">
+            <div class="container hero-container">
+                <div class="hero-image-wrapper fade-in">
+                    <img src="assets/profile.jpg" alt="ภาพโปรไฟล์ ธนวัตร เลิศสิริการุณย์" class="profile-img" onerror="this.onerror=null; this.src='[https://via.placeholder.com/400x500/292929/FF7A2F?text=Tanawat+L](https://via.placeholder.com/400x500/292929/FF7A2F?text=Tanawat+L).';" />
+                    <div class="dot-pattern hero-dots" aria-hidden="true"></div>
+                </div>
+                
+                <div class="hero-content fade-in">
+                    <span class="hero-subtitle">WELCOME TO MY PORTFOLIO</span>
+                    <h1 class="hero-title">Profile</h1>
+                    <p class="hero-description">ประวัติส่วนตัว</p>
+                    <div class="hero-accent-divider"></div>
+                    <p class="hero-bio">
+                        สวัสดีครับ ผม ธนวัตร เลิศสิริการุณย์ มุ่งมั่นในการสร้างสรรค์ดิจิทัลมีเดีย งานตัดต่อวิดีโอ การพากย์เสียง และงานออกแบบเพื่อสร้างประสบการณ์ที่ดีที่สุดแก่ผู้ใช้งาน
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">ติดต่อฉัน <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#about" class="btn btn-outline">ดูข้อมูลเพิ่มเติม</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PERSONAL INFORMATION SECTION -->
+        <section id="about" class="section section-bordered">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2 class="section-title">ข้อมูลส่วนตัว</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-grid fade-in">
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-user"></i></div>
+                        <div class="info-content">
+                            <span class="info-label">ชื่อ-สกุล</span>
+                            <span class="info-value">ธนวัตร เลิศสิริการุณย์</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-face-smile"></i></div>
+                        <div class="info-content">
+                            <span class="info-label">ชื่อเล่น</span>
+                            <span class="info-value">ฟิว</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-calendar-day"></i></div>
+                        <div class="info-content">
+                            <span class="info-label">เกิด</span>
+                            <span class="info-value">16 เมษายน 2547</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-hourglass-half"></i></div>
+                        <div class="info-content">
+                            <span class="info-label">อายุ</span>
+                            <span class="info-value">22 ปี</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-flag"></i></div>
+                        <div class="info-content">
+                            <span class="info-label">สัญชาติ / เชื้อชาติ</span>
+                            <span class="info-value">ไทย / ไทย</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-heart"></i></div>
+                        <div class="info-content">
+                            <span class="info-label">ศาสนา</span>
+                            <span class="info-value">พุทธ</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card full-width">
+                        <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="info-content">
+                            <span class="info-label">การศึกษา</span>
+                            <span class="info-value">มหาวิทยาลัยธนบุรี — คณะเทคโนโลยีดิจิทัลมีเดีย</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOBBIES SECTION -->
+        <section id="hobbies" class="section section-bordered">
+            <div class="container relative-container">
+                <div class="dot-pattern hobbies-dots" aria-hidden="true"></div>
+                
+                <div class="section-header fade-in">
+                    <h2 class="section-title">งานอดิเรก</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="hobbies-grid fade-in">
+                    <div class="hobby-card">
+                        <div class="hobby-icon-bg"><i class="fa-solid fa-music"></i></div>
+                        <h3>ฟังเพลง</h3>
+                        <p>ผ่อนคลายและค้นหาแรงบันดาลใจใหม่ๆ ผ่านเสียงดนตรีหลากหลายสไตล์</p>
+                    </div>
+
+                    <div class="hobby-card">
+                        <div class="hobby-icon-bg"><i class="fa-brands fa-youtube"></i></div>
+                        <h3>ทำคลิปลง YouTube</h3>
+                        <p>สร้างสรรค์ คอนเทนต์วิดีโอ เล่าเรื่องราว เล่าประสบการณ์ และพัฒนาทักษะการตัดต่อ</p>
+                    </div>
+
+                    <div class="hobby-card">
+                        <div class="hobby-icon-bg"><i class="fa-solid fa-gamepad"></i></div>
+                        <h3>เล่นเกมส์คอมพิวเตอร์</h3>
+                        <p>ฝึกการทำงานเป็นทีม การวางแผนกลยุทธ์ และผ่อนคลายในเวลาว่าง</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section section-bordered">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2 class="section-title">ความสามารถ</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="skills-grid fade-in">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-video"></i>
+                            <h3>ตัดต่อวิดีโอ</h3>
+                        </div>
+                        <p>ตัดต่อเรื่องราวให้มีความน่าสนใจ ลำดับภาพและสื่อสารอารมณ์ได้อย่างลื่นไหล</p>
+                    </div>
+
+                    <div class="skill-card highlight-card">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <h3>Adobe Premiere Pro</h3>
+                        </div>
+                        <p>เชี่ยวชาญการใช้โปรแกรมตัดต่อมาตรฐานอุตสาหกรรม จัดการ Workflow งานวิดีโอ</p>
+                    </div>
+
+                    <div class="skill-card highlight-card">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            <h3>DaVinci Resolve</h3>
+                        </div>
+                        <p>ตัดต่อและปรับแต่งเกรดสี (Color Grading) ให้ผลงานมีความสวยงามโดดเด่น</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-microphone"></i>
+                            <h3>พากย์เสียงได้นิดหน่อย</h3>
+                        </div>
+                        <p>ถ่ายทอดน้ำเสียง อารมณ์ และบทบาทตัวละครหรือเสียงบรรยายสำหรับสื่อวิดีโอ</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-sliders"></i>
+                            <h3>ตัดเสียง / แต่งเสียง</h3>
+                        </div>
+                        <p>จัดการไฟล์เสียง ตัดเสียงรบกวน (Noise reduction) และมิกซ์เสียงเบื้องต้น</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2 class="section-title">ข้อมูลการติดต่อ</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-wrapper fade-in">
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-details">
+                            <span class="contact-label">โทรศัพท์</span>
+                            <a href="tel:06189454530" class="contact-link">06189454530</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:fiwxyz1234@gmail.com" class="contact-link">fiwxyz1234@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="contact-details">
+                            <span class="contact-label">Instagram</span>
+                            <a id="instagramLink" href="#" target="_blank" rel="noopener noreferrer" class="contact-link">fiw_hub</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-brands fa-facebook"></i></div>
+                        <div class="contact-details">
+                            <span class="contact-label">Facebook</span>
+                            <a id="facebookLink" href="#" target="_blank" rel="noopener noreferrer" class="contact-link">Tanawat Lertsirikarun</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; <span id="year"></span> Tanawat Lertsirikarun. All rights reserved.</p>
+            <p class="footer-subtext">Designed with Minimal & Modern Aesthetics</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
