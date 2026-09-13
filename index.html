@@ -1,279 +1,106 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Resume และ Web Portfolio ของ ธนวัตร เลิศสิริการุณย์ (ฟิว)">
-    <meta name="author" content="Tanawat Lertsirikarun">
-
-    <title>Tanawat Lertsirikarun | Portfolio & Resume</title>
-
-    <!-- Google Fonts: Prompt -->
-    <link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)">
-    <link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
-    <link href="[https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap](https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap)" rel="stylesheet">
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css)" />
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tanawat Lertsirikarun | Profile</title>
+<meta name="description" content="Resume Portfolio ของ ธนวัตร เลิศสิริการุณย์">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Prompt:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--orange:#ff7a2f;--dark:#292929;--gray:#666;--line:#ddd;--white:#fff;--pale:#fff3ec}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:"Prompt",sans-serif;background:#f3f3f3;color:var(--dark);line-height:1.7}
+a{text-decoration:none;color:inherit}
+nav{position:fixed;top:0;left:0;width:100%;z-index:99;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid #eee}
+.nav{max-width:1100px;height:68px;margin:auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{font:700 25px Kanit,sans-serif;letter-spacing:.5px}.logo span{color:var(--orange)}
+.menu{display:flex;gap:4px;list-style:none}.menu a{display:block;padding:7px 14px;border-radius:20px;font-size:14px;transition:.2s}.menu a:hover{background:var(--orange);color:#fff}
+.menu-btn{display:none;border:0;background:var(--orange);color:#fff;border-radius:9px;padding:7px 12px;font-size:20px}
+main{max-width:1100px;margin:auto;padding:95px 18px 45px}.resume{background:#fff;box-shadow:0 18px 50px rgba(0,0,0,.11);overflow:hidden}
+.hero{display:grid;grid-template-columns:42% 58%;min-height:540px;border-bottom:1px solid var(--line)}
+.photo-side{background:var(--orange);padding:38px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.photo-side:after{content:"";position:absolute;width:280px;height:280px;border:2px solid rgba(255,255,255,.22);border-radius:50%;right:-120px;bottom:-110px}
+.photo{width:100%;max-width:365px;aspect-ratio:4/5;border:9px solid #fff;background:#eee;overflow:hidden;position:relative;z-index:2;box-shadow:0 18px 35px rgba(0,0,0,.2)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.dots{position:absolute;width:120px;height:82px;background-image:radial-gradient(#fff 1.5px,transparent 1.5px);background-size:14px 14px;opacity:.6}.dots.tl{top:15px;left:18px}.dots.br{right:20px;bottom:15px;background-image:radial-gradient(var(--orange) 1.5px,transparent 1.5px);opacity:.8}
+.hero-info{padding:60px 65px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.kicker{color:var(--orange);font-size:14px;font-weight:600;letter-spacing:2px}.hero h1{font:700 clamp(70px,9vw,110px)/.95 Kanit,sans-serif;letter-spacing:-2px}.hero h2{font:500 25px Kanit,sans-serif;color:var(--orange);margin:8px 0 23px}
+.line{height:1px;background:var(--line);margin-bottom:22px}.intro{color:var(--gray);max-width:600px;font-size:15px}.buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.btn{padding:9px 19px;border-radius:25px;border:1px solid var(--dark);font-size:13px;transition:.2s}.btn.orange{background:var(--orange);border-color:var(--orange);color:#fff}.btn:hover{background:var(--dark);color:#fff;transform:translateY(-2px)}
+.sun{position:absolute;width:130px;height:130px;right:-48px;bottom:40px;border-radius:50%;background:repeating-conic-gradient(var(--orange) 0deg 5deg,transparent 5deg 10deg);-webkit-mask:radial-gradient(circle,transparent 0 28px,#000 29px);mask:radial-gradient(circle,transparent 0 28px,#000 29px)}
+.grid{display:grid;grid-template-columns:1fr 1fr}
+section{padding:42px 48px;border-bottom:1px solid var(--line);position:relative}section:nth-child(odd){border-right:1px solid var(--line)}
+.title{display:inline-block;background:var(--orange);color:#fff;font:500 17px Kanit,sans-serif;padding:4px 20px;border-radius:20px 20px 20px 5px;margin-bottom:24px}.title.dark{background:var(--dark)}
+.info{display:grid;gap:9px}.row{display:grid;grid-template-columns:125px 1fr;font-size:14px}.row b{font-weight:500}.row span{color:var(--gray)}
+.hobbies{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.hobby{border:1px solid #eee;border-radius:14px;padding:18px 8px;text-align:center;transition:.2s}.hobby:hover{border-color:var(--orange);transform:translateY(-4px)}.hobby i{font-style:normal;font-size:27px;display:block}.hobby span{font-size:12px;color:var(--gray);line-height:1.4}
+.skills{display:grid;gap:10px}.skill{background:var(--pale);border-left:4px solid var(--orange);border-radius:9px;padding:11px 15px;font-size:14px;font-weight:500}.skill small{display:block;color:#888;font-size:11px;font-weight:400}
+.contacts{display:grid;gap:10px}.contact{display:flex;align-items:center;gap:12px;border:1px solid #eee;border-radius:12px;padding:10px 13px;transition:.2s}.contact:hover{border-color:var(--orange);transform:translateX(4px)}
+.icon{width:38px;height:38px;flex:0 0 38px;border-radius:10px;background:#fff0e8;color:var(--orange);display:grid;place-items:center;font-weight:700;font-size:17px}.contact small{display:block;color:#999;font-size:9px;letter-spacing:1px}.contact span{font-size:13px;word-break:break-word}
+footer{background:var(--dark);color:#fff;text-align:center;padding:28px 20px}footer strong{font:500 20px Kanit,sans-serif;color:var(--orange)}footer p{color:#aaa;font-size:12px}
+@media(max-width:780px){.menu-btn{display:block;cursor:pointer}.menu{display:none;position:absolute;top:62px;left:12px;right:12px;background:#fff;padding:8px;border-radius:13px;box-shadow:0 10px 30px rgba(0,0,0,.12)}.menu.open{display:block}.menu a{padding:9px 12px}main{padding:83px 10px 25px}.hero{grid-template-columns:1fr}.photo-side{padding:28px;min-height:390px}.photo{max-width:300px}.hero-info{padding:42px 27px 48px}.hero h1{font-size:72px}.grid{grid-template-columns:1fr}section{padding:34px 25px}section:nth-child(odd){border-right:0}}
+@media(max-width:500px){.hero h1{font-size:60px}.hero h2{font-size:21px}.intro{font-size:13px}.row{grid-template-columns:1fr;gap:0}.row b{font-size:12px}.hobbies{grid-template-columns:1fr}.hobby{text-align:left;display:flex;align-items:center;gap:12px;padding:12px}.hobby i{margin:0}}
+</style>
 </head>
 <body>
+<nav><div class="nav">
+<a class="logo" href="#home">TANA<span>WAT</span></a>
+<button class="menu-btn" id="menuBtn" aria-label="เปิดเมนู">☰</button>
+<ul class="menu" id="menu"><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#hobbies">Hobbies</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li></ul>
+</div></nav>
 
-    <!-- Header Navigation -->
-    <header class="navbar-header">
-        <div class="container nav-container">
-            <a href="#hero" class="nav-logo">TANAWAT<span>.</span></a>
-            
-            <nav class="nav-links" id="navLinks">
-                <a href="#hero" class="nav-item active">Home</a>
-                <a href="#about" class="nav-item">About</a>
-                <a href="#hobbies" class="nav-item">Hobbies</a>
-                <a href="#skills" class="nav-item">Skills</a>
-                <a href="#contact" class="nav-item">Contact</a>
-            </nav>
+<main id="home"><div class="resume">
+<div class="hero">
+<div class="photo-side"><div class="dots tl"></div><div class="photo"><img src="profile.jpg" alt="ภาพโปรไฟล์ ธนวัตร เลิศสิริการุณย์"></div></div>
+<div class="hero-info">
+<div class="kicker">PERSONAL PORTFOLIO</div><h1>Profile</h1><h2>ประวัติส่วนตัว</h2><div class="line"></div>
+<p class="intro">สวัสดีครับ ผม <b>ธนวัตร เลิศสิริการุณย์</b> นักศึกษาคณะเทคโนโลยีดิจิทัลมีเดีย สนใจงานตัดต่อวิดีโอ การพากย์เสียง การทำคอนเทนต์ และการสร้างสรรค์ผลงานดิจิทัล</p>
+<div class="buttons"><a class="btn orange" href="#contact">ติดต่อฉัน</a><a class="btn" href="#about">ดูข้อมูลเพิ่มเติม</a></div>
+<div class="sun"></div><div class="dots br"></div>
+</div></div>
 
-            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </div>
-    </header>
+<div class="grid">
+<section id="about"><div class="title">ข้อมูลส่วนตัว</div><div class="info">
+<div class="row"><b>ชื่อ-สกุล</b><span>ธนวัตร เลิศสิริการุณย์</span></div>
+<div class="row"><b>ชื่อเล่น</b><span>ฟิว</span></div>
+<div class="row"><b>เกิด</b><span>16 เมษายน 2547</span></div>
+<div class="row"><b>อายุ</b><span>22 ปี</span></div>
+<div class="row"><b>สัญชาติ / เชื้อชาติ</b><span>ไทย / ไทย</span></div>
+<div class="row"><b>ศาสนา</b><span>พุทธ</span></div>
+<div class="row"><b>มหาวิทยาลัย</b><span>มหาวิทยาลัยธนบุรี</span></div>
+<div class="row"><b>คณะ</b><span>เทคโนโลยีดิจิทัลมีเดีย</span></div>
+</div></section>
 
-    <main>
-        <!-- Sunburst Decorative Element -->
-        <div class="sunburst-decoration" aria-hidden="true"></div>
+<section id="hobbies"><div class="title">งานอดิเรก</div><div class="hobbies">
+<div class="hobby"><i>🎵</i><span>ฟังเพลง</span></div>
+<div class="hobby"><i>🎬</i><span>ทำคลิปลง YouTube</span></div>
+<div class="hobby"><i>🎮</i><span>เล่นเกมส์คอมพิวเตอร์</span></div>
+</div></section>
 
-        <!-- HERO SECTION -->
-        <section id="hero" class="section hero-section">
-            <div class="container hero-container">
-                <div class="hero-image-wrapper fade-in">
-                    <img src="assets/profile.jpg" alt="ภาพโปรไฟล์ ธนวัตร เลิศสิริการุณย์" class="profile-img" onerror="this.onerror=null; this.src='[https://via.placeholder.com/400x500/292929/FF7A2F?text=Tanawat+L](https://via.placeholder.com/400x500/292929/FF7A2F?text=Tanawat+L).';" />
-                    <div class="dot-pattern hero-dots" aria-hidden="true"></div>
-                </div>
-                
-                <div class="hero-content fade-in">
-                    <span class="hero-subtitle">WELCOME TO MY PORTFOLIO</span>
-                    <h1 class="hero-title">Profile</h1>
-                    <p class="hero-description">ประวัติส่วนตัว</p>
-                    <div class="hero-accent-divider"></div>
-                    <p class="hero-bio">
-                        สวัสดีครับ ผม ธนวัตร เลิศสิริการุณย์ มุ่งมั่นในการสร้างสรรค์ดิจิทัลมีเดีย งานตัดต่อวิดีโอ การพากย์เสียง และงานออกแบบเพื่อสร้างประสบการณ์ที่ดีที่สุดแก่ผู้ใช้งาน
-                    </p>
-                    <div class="hero-cta">
-                        <a href="#contact" class="btn btn-primary">ติดต่อฉัน <i class="fa-solid fa-arrow-right"></i></a>
-                        <a href="#about" class="btn btn-outline">ดูข้อมูลเพิ่มเติม</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section id="skills"><div class="title dark">ความสามารถ</div><div class="skills">
+<div class="skill">ตัดต่อวิดีโอ<small>Video Editing</small></div>
+<div class="skill">Adobe Premiere Pro<small>Video Editing & Post-production</small></div>
+<div class="skill">DaVinci Resolve<small>Color & Video Editing</small></div>
+<div class="skill">พากย์เสียงได้นิดหน่อย<small>Basic Voice-over</small></div>
+<div class="skill">ตัดเสียง / แต่งเสียง<small>Basic Audio Editing</small></div>
+</div></section>
 
-        <!-- PERSONAL INFORMATION SECTION -->
-        <section id="about" class="section section-bordered">
-            <div class="container">
-                <div class="section-header fade-in">
-                    <h2 class="section-title">ข้อมูลส่วนตัว</h2>
-                    <div class="title-underline"></div>
-                </div>
+<section id="contact"><div class="title">ข้อมูลการติดต่อ</div><div class="contacts">
+<a class="contact" href="tel:06189454530"><div class="icon">☎</div><div><small>PHONE</small><span>06189454530</span></div></a>
+<a class="contact" href="mailto:fiwxyz1234@gmail.com"><div class="icon">✉</div><div><small>EMAIL</small><span>fiwxyz1234@gmail.com</span></div></a>
+<a class="contact" href="https://www.instagram.com/fiw_hub/" target="_blank" rel="noopener"><div class="icon">◎</div><div><small>INSTAGRAM</small><span>fiw_hub</span></div></a>
+<a class="contact" href="https://www.facebook.com/TanawatLertsirikarun" target="_blank" rel="noopener"><div class="icon">f</div><div><small>FACEBOOK</small><span>Tanawat Lertsirikarun</span></div></a>
+</div></section>
+</div>
 
-                <div class="about-grid fade-in">
-                    <div class="info-card">
-                        <div class="info-icon"><i class="fa-solid fa-user"></i></div>
-                        <div class="info-content">
-                            <span class="info-label">ชื่อ-สกุล</span>
-                            <span class="info-value">ธนวัตร เลิศสิริการุณย์</span>
-                        </div>
-                    </div>
+<footer><strong>Tanawat Lertsirikarun</strong><p>Digital Media Student • Resume Portfolio</p></footer>
+</div></main>
 
-                    <div class="info-card">
-                        <div class="info-icon"><i class="fa-solid fa-face-smile"></i></div>
-                        <div class="info-content">
-                            <span class="info-label">ชื่อเล่น</span>
-                            <span class="info-value">ฟิว</span>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="info-icon"><i class="fa-solid fa-calendar-day"></i></div>
-                        <div class="info-content">
-                            <span class="info-label">เกิด</span>
-                            <span class="info-value">16 เมษายน 2547</span>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="info-icon"><i class="fa-solid fa-hourglass-half"></i></div>
-                        <div class="info-content">
-                            <span class="info-label">อายุ</span>
-                            <span class="info-value">22 ปี</span>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="info-icon"><i class="fa-solid fa-flag"></i></div>
-                        <div class="info-content">
-                            <span class="info-label">สัญชาติ / เชื้อชาติ</span>
-                            <span class="info-value">ไทย / ไทย</span>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="info-icon"><i class="fa-solid fa-heart"></i></div>
-                        <div class="info-content">
-                            <span class="info-label">ศาสนา</span>
-                            <span class="info-value">พุทธ</span>
-                        </div>
-                    </div>
-
-                    <div class="info-card full-width">
-                        <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                        <div class="info-content">
-                            <span class="info-label">การศึกษา</span>
-                            <span class="info-value">มหาวิทยาลัยธนบุรี — คณะเทคโนโลยีดิจิทัลมีเดีย</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- HOBBIES SECTION -->
-        <section id="hobbies" class="section section-bordered">
-            <div class="container relative-container">
-                <div class="dot-pattern hobbies-dots" aria-hidden="true"></div>
-                
-                <div class="section-header fade-in">
-                    <h2 class="section-title">งานอดิเรก</h2>
-                    <div class="title-underline"></div>
-                </div>
-
-                <div class="hobbies-grid fade-in">
-                    <div class="hobby-card">
-                        <div class="hobby-icon-bg"><i class="fa-solid fa-music"></i></div>
-                        <h3>ฟังเพลง</h3>
-                        <p>ผ่อนคลายและค้นหาแรงบันดาลใจใหม่ๆ ผ่านเสียงดนตรีหลากหลายสไตล์</p>
-                    </div>
-
-                    <div class="hobby-card">
-                        <div class="hobby-icon-bg"><i class="fa-brands fa-youtube"></i></div>
-                        <h3>ทำคลิปลง YouTube</h3>
-                        <p>สร้างสรรค์ คอนเทนต์วิดีโอ เล่าเรื่องราว เล่าประสบการณ์ และพัฒนาทักษะการตัดต่อ</p>
-                    </div>
-
-                    <div class="hobby-card">
-                        <div class="hobby-icon-bg"><i class="fa-solid fa-gamepad"></i></div>
-                        <h3>เล่นเกมส์คอมพิวเตอร์</h3>
-                        <p>ฝึกการทำงานเป็นทีม การวางแผนกลยุทธ์ และผ่อนคลายในเวลาว่าง</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SKILLS SECTION -->
-        <section id="skills" class="section section-bordered">
-            <div class="container">
-                <div class="section-header fade-in">
-                    <h2 class="section-title">ความสามารถ</h2>
-                    <div class="title-underline"></div>
-                </div>
-
-                <div class="skills-grid fade-in">
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <i class="fa-solid fa-video"></i>
-                            <h3>ตัดต่อวิดีโอ</h3>
-                        </div>
-                        <p>ตัดต่อเรื่องราวให้มีความน่าสนใจ ลำดับภาพและสื่อสารอารมณ์ได้อย่างลื่นไหล</p>
-                    </div>
-
-                    <div class="skill-card highlight-card">
-                        <div class="skill-header">
-                            <i class="fa-solid fa-layer-group"></i>
-                            <h3>Adobe Premiere Pro</h3>
-                        </div>
-                        <p>เชี่ยวชาญการใช้โปรแกรมตัดต่อมาตรฐานอุตสาหกรรม จัดการ Workflow งานวิดีโอ</p>
-                    </div>
-
-                    <div class="skill-card highlight-card">
-                        <div class="skill-header">
-                            <i class="fa-solid fa-wand-magic-sparkles"></i>
-                            <h3>DaVinci Resolve</h3>
-                        </div>
-                        <p>ตัดต่อและปรับแต่งเกรดสี (Color Grading) ให้ผลงานมีความสวยงามโดดเด่น</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <i class="fa-solid fa-microphone"></i>
-                            <h3>พากย์เสียงได้นิดหน่อย</h3>
-                        </div>
-                        <p>ถ่ายทอดน้ำเสียง อารมณ์ และบทบาทตัวละครหรือเสียงบรรยายสำหรับสื่อวิดีโอ</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <i class="fa-solid fa-sliders"></i>
-                            <h3>ตัดเสียง / แต่งเสียง</h3>
-                        </div>
-                        <p>จัดการไฟล์เสียง ตัดเสียงรบกวน (Noise reduction) และมิกซ์เสียงเบื้องต้น</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACT SECTION -->
-        <section id="contact" class="section">
-            <div class="container">
-                <div class="section-header fade-in">
-                    <h2 class="section-title">ข้อมูลการติดต่อ</h2>
-                    <div class="title-underline"></div>
-                </div>
-
-                <div class="contact-wrapper fade-in">
-                    <div class="contact-card">
-                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
-                        <div class="contact-details">
-                            <span class="contact-label">โทรศัพท์</span>
-                            <a href="tel:06189454530" class="contact-link">06189454530</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-card">
-                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
-                        <div class="contact-details">
-                            <span class="contact-label">Email</span>
-                            <a href="mailto:fiwxyz1234@gmail.com" class="contact-link">fiwxyz1234@gmail.com</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-card">
-                        <div class="contact-icon"><i class="fa-brands fa-instagram"></i></div>
-                        <div class="contact-details">
-                            <span class="contact-label">Instagram</span>
-                            <a id="instagramLink" href="#" target="_blank" rel="noopener noreferrer" class="contact-link">fiw_hub</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-card">
-                        <div class="contact-icon"><i class="fa-brands fa-facebook"></i></div>
-                        <div class="contact-details">
-                            <span class="contact-label">Facebook</span>
-                            <a id="facebookLink" href="#" target="_blank" rel="noopener noreferrer" class="contact-link">Tanawat Lertsirikarun</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container footer-container">
-            <p>&copy; <span id="year"></span> Tanawat Lertsirikarun. All rights reserved.</p>
-            <p class="footer-subtext">Designed with Minimal & Modern Aesthetics</p>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+<script>
+const btn=document.getElementById("menuBtn"),menu=document.getElementById("menu");
+btn.addEventListener("click",()=>{menu.classList.toggle("open");btn.textContent=menu.classList.contains("open")?"✕":"☰"});
+document.querySelectorAll(".menu a").forEach(a=>a.addEventListener("click",()=>{menu.classList.remove("open");btn.textContent="☰"}));
+</script>
 </body>
 </html>
